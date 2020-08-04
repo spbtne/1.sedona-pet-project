@@ -1,0 +1,714 @@
+* {
+  margin: 0 0;
+  padding: 0 0;
+  list-style: none;
+  text-decoration: none;
+
+  box-sizing: border-box;
+
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #000000;
+
+  background-color: #f9f6f3;
+}
+
+.visually-hidden {
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+
+  overflow: hidden;
+}
+
+/*
+!
+!
+!
+!
+!
+Navigation-start
+!
+*/
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f9f6f3;
+  box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2);
+}
+
+.header {
+  position: relative;
+}
+
+header .logo {
+  position: absolute;
+  left: 50%;
+  margin-left: -70px;
+
+  background-color: transparent;
+
+  z-index: 3;
+}
+
+.navigation-wrapper {
+  position: absolute;
+  width: 100%;
+
+  padding-left: 70px;
+  padding-right: 70px;
+  min-height: 57px;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  background-color: #ffffff;
+
+  z-index: 2;
+}
+
+.navigation-wrapper * {
+  background-color: #ffffff;
+  font-weight: 700;
+}
+
+.navigation-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+
+  width: calc(100% / 3);
+}
+
+.navigation-list__left {
+  padding-left: 2px;
+  padding-bottom: 2px;
+}
+
+.navigation-list__left li:last-child {
+  margin-right: 15px;
+}
+
+.navigation-list__right {
+  padding-right: 2px;
+  padding-bottom: 2px;
+}
+
+.navigation-list__right li:first-child {
+  margin-left: 25px;
+}
+
+.navigation-list a:hover {
+  color: #81b3d2;
+}
+
+.navigation-list a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/*
+!
+!
+!
+!
+!
+Welcome layout start
+!
+*/
+
+figure.welcome-layout {
+  position: relative;
+}
+
+img.welcome-img {
+  bottom: 56px;
+  z-index: 0;
+}
+
+img.welcome-text {
+  width: calc(100% * 0.38);
+  height: calc(100vw * 0.294);
+  max-height: 353px;
+
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 165px;
+  right: 0;
+
+  background-color: transparent;
+}
+
+header .intro {
+  position: absolute;
+}
+
+.intro .tittle {
+  font-weight: 700;
+  font-size: 21px;
+
+  margin-top: 10px;
+}
+
+header::after {
+  position: absolute;
+  content: url(../img/polygon.png);
+  bottom: -6px;
+  left: -1px;
+}
+
+div.intro {
+  position: absolute;
+  width: 100%;
+  bottom: 53px;
+
+  text-align: center;
+
+  background-color: transparent;
+
+  z-index: 2;
+}
+
+.intro p {
+  background-color: transparent;
+}
+
+.intro p:last-child {
+  padding-top: 25px;
+}
+
+/*
+!
+!
+!
+!
+!
+Features start
+!
+*/
+
+section.features {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.blue-box * {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+div.blue-box {
+  box-sizing: border-box;
+  width: 400px;
+  background-color: #81b3d2;
+  padding: 47px 30px 27px 30px;
+  text-align: center;
+}
+
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.features-list li {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.features-list figure {
+  max-height: 256px;
+  position: relative;
+}
+img.first-feature-img,
+img.second-feature-img {
+  height: auto;
+}
+
+.features h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+}
+.features-list p,
+.features-list span {
+  line-height: 21px;
+}
+
+.features-list .num {
+  margin-top: 26px;
+  margin-bottom: 17px;
+}
+
+.feautres-item__details {
+  display: flex;
+}
+
+.feautres-item__details li {
+  width: 400px;
+  padding-bottom: 67px;
+  position: relative;
+}
+
+.feautres-item__details .apartment {
+  background-image: url(../img/features_icons/apart.svg);
+  background-repeat: no-repeat;
+  background-position: top 60px right 50%;
+  text-align: center;
+}
+
+.feautres-item__details .souvenirs {
+  background-image: url(../img/features_icons/gift.svg);
+  background-repeat: no-repeat;
+  background-position: top 55px right 50%;
+  text-align: center;
+}
+
+.feautres-item__details .food {
+  background-image: url(../img/features_icons/food.svg);
+  background-repeat: no-repeat;
+  background-position: top 60px right 50%;
+  text-align: center;
+}
+.feautres-item__details p {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+
+  margin: 0 auto;
+  margin-top: 149px;
+  padding: 11px 20px;
+}
+
+.feautres-item__details span {
+  width: 100%;
+  padding: 15px 30px;
+
+  text-align: center;
+}
+
+.num.num2 {
+  margin-bottom: 15px;
+}
+
+li.four-row {
+  width: 400px;
+  padding: 20px 20px;
+
+  background-color: transparent;
+
+  flex-direction: column;
+  align-items: center;
+}
+
+li.four-row p:first-child {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+
+  margin-top: 25px;
+  text-align: center;
+}
+li.four-row span {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+/*
+!
+!
+!
+!
+Search-hotel start
+!
+*/
+
+.hotels .tittle {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+
+  width: 100%;
+  padding-top: 53px;
+
+  background-color: #ffffff;
+}
+
+.hotels span {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  background-color: #ffffff;
+
+  padding-top: 22px;
+  padding-bottom: 130px;
+}
+div.search-wrapper {
+  position: relative;
+}
+
+button.search-button {
+  background-color: #766357;
+  box-shadow: 0px 10px 20px 0px rgba(0, 1, 1, 0.25);
+
+  width: 568px;
+  height: 86px;
+  padding: 20px 20px;
+
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ffffff;
+
+  border: none;
+
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -284px;
+}
+
+button.search-button:hover {
+  background-color: #604e43;
+}
+
+button.search-button:active {
+  background-color: #503e33;
+  color: rgba(255, 255, 255, 0.3);
+}
+/*
+!
+!
+!
+!
+!
+Search-form
+!
+*/
+form.search-form {
+  width: 568px;
+  height: 395px;
+  background-color: #ffffff;
+  padding: 55px 55px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+
+  box-shadow: 0px 7px 15px 0px rgba(0, 1, 1, 0.15);
+
+  position: absolute;
+  z-index: 5;
+  left: 50%;
+  margin-left: -284px;
+}
+
+.search-form label,
+.search-form input,
+.search-form p {
+  background-color: #ffffff;
+  font-weight: 700;
+}
+
+.search-form input:hover {
+  background-color: #ebebeb;
+}
+.search-form input:focus {
+  outline: none;
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+}
+
+.search-form .date {
+  flex-grow: 1;
+  height: 38px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.date input {
+  flex-grow: 1;
+  margin-left: 23px;
+  padding-left: 10px;
+}
+
+::placeholder {
+  color: #000000;
+}
+
+.date input {
+  height: 38px;
+  border: 0;
+  background-color: #f2f2f2;
+}
+
+.calendar-button {
+  width: 39px;
+  height: 38px;
+  background-color: #f2f2f2;
+  border: 0;
+}
+
+.calendar-button:hover svg > path,
+.calendar-button:hover svg > rect {
+  fill: #000000;
+}
+
+.calendar-button:active svg > path,
+.calendar-button:active svg > rect {
+  fill: #81b3d2;
+}
+
+.search-form p:nth-child(2) {
+  margin-top: 4px;
+}
+
+.search-form .guests {
+  display: flex;
+}
+
+.guests input {
+  background-color: #f2f2f2;
+  border: 0;
+  height: 38px;
+  width: 38px;
+  text-align: center;
+}
+
+.guest-adults label {
+  margin-right: 40px;
+  margin-top: 8px;
+}
+
+.guest :not(label) {
+  margin-top: 5px;
+}
+
+.guest-children label {
+  margin-right: 27px;
+  margin-top: 7px;
+}
+
+button.change-value {
+  width: 38px;
+  height: 38px;
+  background-color: #f2f2f2;
+  border: 1px solid tomato;
+
+  position: relative;
+}
+/* Создаю псевдоэлемент знака минус до плюса, для возможности использования псевдоклассов*/
+.guests .button-plus::before {
+  position: absolute;
+  top: 17px;
+  right: 87px;
+  content: "";
+  width: 12px;
+  height: 3px;
+  background-color: #a9a9a9;
+}
+
+.button-minus:hover ~ .button-plus::before {
+  position: absolute;
+  top: 17px;
+  right: 87px;
+  content: "";
+  width: 12px;
+  height: 3px;
+  background-color: #000000;
+}
+
+.button-minus:active ~ .button-plus::before {
+  position: absolute;
+  top: 17px;
+  right: 87px;
+  content: "";
+  width: 12px;
+  height: 3px;
+  background-color: #81b3d2;
+}
+
+/* Аналогичная процедура с плюсом*/
+.guests .button-minus::after {
+  position: absolute;
+  top: 17px;
+  left: 88px;
+  content: "";
+  width: 12px;
+  height: 3px;
+  background-color: #a9a9a9;
+
+  z-index: 5;
+}
+/*
+.button-minus:hover ~ .button-plus::before {
+  position: absolute;
+  top:17px;
+  right:87px;
+  content: "";
+  width: 12px;
+  height: 3px;
+  background-color: #000000;
+}
+
+.button-minus:active ~ .button-plus::before {
+  position: absolute;
+  top:17px;
+  right:87px;
+  content: "";
+  width: 12px;
+  height: 3px;
+  background-color: #81b3d2;
+}*/
+
+button.find-button {
+  width: 568px;
+  height: 58px;
+  align-self: flex-end;
+
+  border: 0;
+  background-color: #81b3d2;
+  font-size: 21px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+/*
+!
+!
+!
+!
+Footer
+!
+*/
+
+footer.footer {
+  width: 1200px;
+  height: 568px;
+  position: relative;
+}
+
+.map {
+  width: 1200px;
+  height: 568px;
+  position: relative;
+}
+.map * {
+  background-color: transparent;
+}
+
+div.contacts-wrapper {
+  height: 120px;
+  width: 1200px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px 100px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  position: absolute;
+  bottom: -26px;
+}
+
+div.contacts-wrapper * {
+  background-color: transparent;
+}
+
+.phone p,
+.phone a {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  margin-left: 22px;
+}
+
+.phone a {
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.social-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  width: 156px;
+  margin-right: 46px;
+  margin-top: 1px;
+}
+
+.social-list a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+  margin: 3px 3px;
+}
+
+.social-list a:hover {
+  background-color: #669ec0;
+}
+
+.social-list a:active {
+  background-color: #5496bd;
+}
+
+.social-list a:active > img {
+  opacity: 0.3;
+}
+
+div.developer {
+  margin-right: 2px;
+  margin-top: 0px;
+
+  display: flex;
+  align-items: center;
+}
+
+.developer-link {
+  width: 115px;
+  height: 41px;
+}
+.developer-link svg {
+  width: 115px;
+  height: 41px;
+}
+
+.developer-link svg:hover > path,
+.developer-link svg:hover > rect {
+  fill: #81b3d2;
+}
+
+.developer-link svg:active > path,
+.developer-link svg:active > rect {
+  fill: #bdbbbc;
+}
+
+.developer p {
+  margin-right: 5px;
+}
