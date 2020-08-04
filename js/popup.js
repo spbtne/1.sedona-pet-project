@@ -24,15 +24,6 @@ var childPlus = document.querySelector(".child-plus");
 // счетчик кликов для закрытия окна поиска
 var clickCount = 0;
 
-var isStorageSupport = true;
-var storage = "";
-
-try {
-  storage = localStorage.getItem("adultsCount");
-} catch (err) {
-  isStorageSupport = false;
-}
-
 // анимация формы поиска
 
 searchButton.addEventListener("click", function (evt) {
@@ -49,25 +40,6 @@ searchButton.addEventListener("click", function (evt) {
     setTimeout(() => searchFormWrapper.classList.add("visually-hidden"), 1000);
   }
 });
-
-// searchForm.addEventListener("submit", function (evt) {
-//   if (!dateInFill.value || !dateOutFill.value) {
-//     evt.preventDefault();
-//     searchForm.classList.remove("form-show");
-//     searchForm.classList.remove("popup-error");
-//     searchButton.classList.remove("popup-error");
-//     searchForm.offsetWidth = searchForm.offsetWidth;
-//     searchForm.classList.add("popup-error");
-//     searchButton.classList.add("popup-error");
-//   } else {
-//     if (isStorageSupport) {
-//       localStorage.setItem("adultsCount", adults.value);
-//       localStorage.setItem("childrenCount", kids.value);
-//       searchForm.classList.remove("form-show");
-//       searchForm.classList.add("form-hide");
-//     }
-//   }
-// });
 
 // Подменил input type text на input type date
 
